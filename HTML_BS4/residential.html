@@ -78,7 +78,7 @@
 						<ul class="list-unstyled">
 							<li><b>Address:</b> 725, Lebourneuf, <br /> Quebec, Quebec G2J 0C4 Canada</li>
 							<li><b>Phone:</b> 581-701-0303</li>
-							<li><b>Email:</b> <a href="mailto:support@rocketelevator.com">support@rocketelevator.com</a></li>
+							<li><b>Email:</b> <a href="mailto:support@rocketelevator.com">support@rocketelevators.com</a></li>
 						</ul>
 					</div>
 
@@ -188,6 +188,10 @@
 												<a href="Index.html#services">
 													SERVICES
 												</a>
+												<ul class="dropdown-menu">
+													<li><a href="residential.html"> RESIDENTIAL</a></li>
+													<li><a href="corpo.html"> COMMERCIAL</a></li>
+												</ul>
 											</li>
 											<li><!-- Portfolio -->
 												<a href="Index.html#work">
@@ -231,14 +235,18 @@
 							</div>
 						</header>
 						<!-- /Top Nav -->
-		
+		<!-- BUTTON CALLOUT -->
+		<a href="#contact" class="btn btn-xlg btn-blue fs-20 fullwidth m-0 rad-0 p-40">
+			<span class="font-lato fs-30">
+				<strong>Residential </strong>Services
+			
+			</span>
+		</a>
+		<!-- /BUTTON CALLOUT -->
 					</div>
-					<section>
-						<div class="container">
-							<div class="text-center">
-						<h1>RESIDENTIAL SERVICES</h1>
-				</div>
-			</section>
+				
+						
+						
 			<!-- /PAGE HEADER -->
 			<!-- -->
 			<section>
@@ -336,189 +344,6 @@
 				</div>
 			</section>
 			<!-- / -->
-
-
-
-
-	
-
-<!-- CONTACT -->
-		<section id="contact">
-			<div class="container">
-
-				<div class="heading-title heading-dotted text-center">
-					<h2>Contact us</h2>
-				</div>
-
-
-
-				<div class="row">
-
-					<!-- FORM -->
-					<div class="col-md-8 col-sm-8">
-
-						<h3>Curious about anything about us? Feel free to ask!</h3>
-
-						<!--
-							MESSAGES
-
-								How it works?
-								The form data is posted to php/contact.php where the fields are verified!
-								php.contact.php will redirect back here and will add a hash to the end of the URL:
-									#alert_success 		= email sent
-									#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
-									#alert_mandatory	= email not sent - required fields empty
-									Hashes are handled by assets/js/contact.js
-
-								Form data: required to be an array. Example:
-									contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
-									Also, add `required` to input fields if is a mandatory field.
-									Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
-
-								PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
-											 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
-
-								WARNING! Do not change the `email` and `name`!
-											contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-											contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-						-->
-
-						<!-- Alert Success -->
-						<div id="alert_success" class="alert alert-success mb-30">
-							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-							<strong>Thank You!</strong> Your message was successfully sent!
-						</div><!-- /Alert Success -->
-
-
-						<!-- Alert Failed -->
-						<div id="alert_failed" class="alert alert-danger mb-30">
-							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-							<strong>[SMTP] Error!</strong> Internal server error!
-						</div><!-- /Alert Failed -->
-
-
-						<!-- Alert Mandatory -->
-						<div id="alert_mandatory" class="alert alert-danger mb-30">
-							<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-							<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
-						</div><!-- /Alert Mandatory -->
-
-
-						<form action="php/contact.php" method="post" enctype="multipart/form-data">
-							<fieldset>
-								<input type="hidden" name="action" value="contact_send" />
-
-								<div class="row">
-										<div class="col-md-4">
-											<label for="contact:name">Full Name *</label>
-											<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:corporation">Company Name *</label>
-											<input required type="email" value="" class="form-control" name="contact[corporation]" id="contact:corporation">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:email">E-mail Address *</label>
-											<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
-										</div>
-										<div class="col-md-4">
-											<label for="contact:phone">Phone</label>
-											<input type="text" value="" class="form-control" name="contact[phone]" id="contact:phone">
-										</div>
-
-										<div class="col-md-8">
-											<label for="contact:projtitle">Project Title *</label>
-											<input required type="text" value="" class="form-control" name="contact[projtitle][required]" id="contact:projtitle">
-										</div>
-								</div>
-								<div class="row">
-										<div class="col-md-12">
-											<label for="contact:projdesc">Project Description *</label>
-											<textarea required maxlength="10000" rows="2" class="form-control" name="contact[projdesc]" id="contact:projdesc"></textarea>
-										</div>
-								</div>
-								 <div class="row">
-										<div class="col-md-12">
-											<label>Department</label>
-											<select class="form-control pointer" name="contact[department]">
-												<option value="">--- Select ---</option>
-												<option value="Residential">Residential</option>
-												<option value="Commercial">Commercial</option>
-												<option value="Corporate">Corporate</option>
-												<option value="Hybrid">Hybrid</option>
-											</select>
-
-									 </div>
-								</div>
-								<div class="row">
-										<div class="col-md-12">
-											<label>Message *</label>
-											<textarea required maxlength="10000" rows="2" class="form-control" name="contact[message]" id="contact:message"></textarea>
-										</div>
-								</div>
-								<div class="row">
-										<div class="col-md-12">
-											<label>File Attachment</label>
-
-											<!-- custom file upload -->
-											<input class="custom-file-upload" type="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
-											<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
-
-										</div>
-								</div>
-
-							</fieldset>
-
-							<div class="row">
-								<div class="col-md-12">
-									<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
-								</div>
-							</div>
-						</form>
-
-					</div>
-					<!-- /FORM -->
-
-
-					<!-- INFO -->
-					<div class="col-md-4 col-sm-4">
-
-						<h3>Visit Us</h3>
-
-						<!--
-						Available heights
-							h-100
-							h-150
-							h-200
-							h-250
-							h-300
-							h-350
-							h-400
-							h-450
-							h-500
-							h-550
-							h-600
-						-->
-						<div>
-							<iframe class="col-md-12 col-sm-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2729.0429937847985!2d-71.28188348434092!3d46.84284354841613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb897d0e1cafe3f%3A0x9863b2d992c71670!2sCodeBoxx!5e0!3m2!1sfr!2sca!4v1549056508617" height = "425" style="border:0" allowfullscreen></iframe>
-						</div>
-
-						<hr />
-
-						<p>
-							<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 418-725 Boulevard Lebourgneuf Quebec City, QC <br>Canada <br> G2J 0C4 </span>
-							<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1418580-7055">1 (418) 580-7055</a></span>
-							<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="https://bit.ly/2bKPnNv" target="_blank"><span class="__cf_email__" data-cfemail="9cefe9ececf3eee8dceef3fff7f9e8f9f0f9eafde8f3eeefb2f2f9e8">[email&#160;protected]</span></a></span>
-						</p>
-
-					</div>
-					<!-- /INFO -->
-
-				</div>
-
-			</div>
-		</section>
-		<!-- /CONTACT -->
 
 
 <!-- FOOTER -->

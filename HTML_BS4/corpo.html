@@ -78,7 +78,7 @@
 						<ul class="list-unstyled">
 							<li><b>Address:</b> 725, Lebourneuf, <br /> Quebec, Quebec G2J 0C4 Canada</li>
 							<li><b>Phone:</b> 581-701-0303</li>
-							<li><b>Email:</b> <a href="mailto:support@rocketelevator.com">support@rocketelevator.com</a></li>
+							<li><b>Email:</b> <a href="mailto:support@rocketelevators.com">support@rocketelevators.com</a></li>
 						</ul>
 					</div>
 
@@ -188,6 +188,10 @@
 												<a href="Index.html#services">
 													SERVICES
 												</a>
+												<ul class="dropdown-menu">
+													<li><a href="residential.html"> RESIDENTIAL</a></li>
+													<li><a href="corpo.html"> COMMERCIAL</a></li>
+												</ul>
 											</li>
 											<li><!-- Portfolio -->
 												<a href="Index.html#work">
@@ -231,20 +235,24 @@
 							</div>
 						</header>
 						<!-- /Top Nav -->
-		
+		<!-- BUTTON CALLOUT -->
+		<a href="#contact" class="btn btn-xlg btn-blue fs-20 fullwidth m-0 rad-0 p-40">
+			<span class="font-lato fs-30">
+				<strong>Commercial & Corporate </strong>Services
+			
+			</span>
+		</a>
+		<!-- /BUTTON CALLOUT -->
 					</div>
-					<section>
-						<div class="container">
-							<div class="text-center">
-						<h1>RESIDENTIAL SERVICES</h1>
-				</div>
-			</section>
+				
+						
+						
 			<!-- /PAGE HEADER -->
 			<!-- -->
 			<section>
 				<div class="container">
 					
-					<p class="lead">Lifts and residential elevators are mechanical devices that can break down and therefore need regular servicing. Maintenance is generally complex and should be done by an expert. The manufacturer of your residential elevator or lift has a minimum recommended maintenance schedule that needs to be followed, which may be in the form of a manual.</p>
+					<p class="lead">provides world-class services and innovative solutions for new buildings – all you need for smooth people flow in your building.</p>
 					
 					<div class="divider divider-center danger-color"><!-- divider -->
 						<i class="fa fa-chevron-down"></i>
@@ -256,30 +264,30 @@
 							<!-- OWL SLIDER -->
 							<div class="owl-carousel buttons-autohide controlls-over m-0" data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide", "progressBar":"true"}'>
 								<div>
-									<img class="img-fluid" src="https://i.postimg.cc/d1xk2CN8/Adobe-Stock-201036287-Converted.png" alt="">
+									<img class="img-fluid" src="https://i.postimg.cc/jjvJjmz3/Adobe-Stock-103570025.jpg" alt="">
+								</div>
+								<div>
+									<img class="img-fluid" src="https://i.postimg.cc/Pq6z7PFq/Adobe-Stock-179073967.jpg" alt="">
 								</div>
 								<div>
 									<img class="img-fluid" src="https://i.postimg.cc/WzxZvZM2/Adobe-Stock-66781279.jpg" alt="">
 								</div>
 								<div>
-									<img class="img-fluid" src="https://i.postimg.cc/k5yWbBdc/Adobe-Stock-73868131.jpg" alt="">
-								</div>
-								<div>
-									<img class="img-fluid" src="https://i.postimg.cc/Gt4DVKT7/Adobe-Stock-41696502.jpg" alt="">
+									<img class="img-fluid" src="https://i.postimg.cc/JzZNRp6S/Adobe-Stock-3294993.jpg" alt="">
 								</div>
 							</div>
 							<!-- /OWL SLIDER -->
 						</div>
 						<div class="col-md-6">
 							<h3>ROCKET ELEVATORS : World Wide Experience</h3>
-							<p>To ensure your device is serviced on a regular basis, you may want to consider purchasing a maintenance contract from Lucanus Corporation, there are many options available.</p>
+							<p>People Flow consultation, energy consumption calculations, building traffic analysis and planning</p>
 							
-							<p>Savaria Parts, Federal Elevator Parts, Garaventa Parts, Bruno Parts, Braun Parts, Adapt Solution Parts, Vacuum Elevator Parts, Nabco Parts, 
-								Concord Elevator Parts.</p>
+							<p> Planning and specification with easy to use tools for CAD drawings and BIM
+								</p>
 							
-							<p>Contact us today about a service contract for you home elevator or lif.</p>
+							<p>Elevator interior design with ROCKET Design collection and tools</p>
 							
-							<p>Home Elevator Residential Service and Maintenance Programs and Packages .</p>
+							<p>Modernization solutions for the whole lifecycle of your building.</p>
 						</div>
 					</article>
 					<!-- /BORN TO BE A WINNER -->
@@ -336,199 +344,6 @@
 				</div>
 			</section>
 			<!-- / -->
-
-
-
-
-	
-
-<!--Contact-->
-		
-			<section>
-				<div class="container">
-					<div class="heading-title heading-dotted text-center">
-						<h2>Contact</h2>
-					</div>
-					<!-- 
-					Available heights
-						h-100
-						h-150
-						h-200
-						h-250
-						h-300
-						h-350
-						h-400
-						h-450
-						h-500
-						h-550
-						h-600
-					-->
-					<!--<div id="map3" class="h-300 mb-60"></div>
-
-					<div class="row">-->
-
-						<!-- FORM -->
-						<div class="col-md-12">
-
-							<h3>Drop us a line or just say <strong><em>Hello!</em></strong></h3>
-
-							
-							<!--
-								MESSAGES
-								
-									How it works?
-									The form data is posted to php/contact.php where the fields are verified!
-									php.contact.php will redirect back here and will add a hash to the end of the URL:
-										#alert_success 		= email sent
-										#alert_failed		= email not sent - internal server error (404 error or SMTP problem)
-										#alert_mandatory	= email not sent - required fields empty
-										Hashes are handled by assets/js/contact.js
-
-									Form data: required to be an array. Example:
-										contact[email][required]  WHERE: [email] = field name, [required] = only if this field is required (PHP will check this)
-										Also, add `required` to input fields if is a mandatory field. 
-										Example: <input required type="email" value="" class="form-control" name="contact[email][required]">
-
-									PLEASE NOTE: IF YOU WANT TO ADD OR REMOVE FIELDS (EXCEPT CAPTCHA), JUST EDIT THE HTML CODE, NO NEED TO EDIT php/contact.php or javascript
-												 ALL FIELDS ARE DETECTED DINAMICALY BY THE PHP
-
-									WARNING! Do not change the `email` and `name`!
-												contact[name][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-												contact[email][required] 	- should stay as it is because PHP is using it for AddReplyTo (phpmailer)
-							-->
-
-							<!-- Alert Success -->
-							<div id="alert_success" class="alert alert-success mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>Thank You!</strong> Your message successfully sent!
-							</div><!-- /Alert Success -->
-
-
-							<!-- Alert Failed -->
-							<div id="alert_failed" class="alert alert-danger mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>[SMTP] Error!</strong> Internal server error!
-							</div><!-- /Alert Failed -->
-
-
-							<!-- Alert Mandatory -->
-							<div id="alert_mandatory" class="alert alert-danger mb-30">
-								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-								<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
-							</div><!-- /Alert Mandatory -->
-
-
-							<form action="php/contact.php" method="post" enctype="multipart/form-data">
-								<fieldset>
-									<input type="hidden" name="action" value="contact_send" />
-
-									<div class="row">
-											<div class="col-md-4">
-												<label for="contact:name">Full Name *</label>
-												<input required type="text" value="" class="form-control" name="contact[name][required]" id="contact:name">
-											</div>
-											<div class="col-md-4">
-												<label for="contact:email">E-mail Address *</label>
-												<input required type="email" value="" class="form-control" name="contact[email][required]" id="contact:email">
-											</div>
-											  <div class="col-md-4">
-												<label for="contact:subject">Projet Name *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
-											</div>
-											
-									</div>
-									
-									<div class="row">
-
-										
-									</div>
-									<div class="row">
-											<div class="col-md-4">
-												<label for="contact:subject">Projet Name *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
-											</div>
-											<div class="col-md-4">
-												<label for="contact:subject">Project Description *</label>
-												<input required type="text" value="" class="form-control" name="contact[subject][required]" id="contact:subject">
-											</div>
-											<div class="col-md-4">
-												<label for="contact_department">Department</label>
-												<select class="form-control pointer" name="contact[department]">
-													<option value="">--- Select ---</option>
-													<option value="Marketing">Owner</option>
-													<option value="Webdesign">Purchase Dept</option>
-													<option value="Architecture">Maintenance</option>
-												</select>
-											</div>
-									</div>
-									<div class="row">
-											<div class="col-md-12">
-												<label for="contact:message">Message *</label>
-												<textarea required maxlength="10000" rows="8" class="form-control" name="contact[message]" id="contact:message"></textarea>
-											</div>
-									</div>
-									<div class="row">
-											<div class="col-md-12">
-												<label for="contact:attachment">File Attachment</label>
-
-												<!-- custom file upload -->
-												<input class="custom-file-upload" type="file" id="file" name="contact[attachment]" id="contact:attachment" data-btn-text="Select a File" />
-												<small class="text-muted block">Max file size: 10Mb (zip/pdf/jpg/png)</small>
-
-											</div>
-									</div>
-
-								</fieldset>
-
-								<div class="row">
-									<div class="col-md-12">
-										<button type="submit" class="btn btn-danger"><i class="fa fa-check"></i> SEND MESSAGE</button>
-									</div>
-								</div>
-							</form>
-
-						</div>
-						<!--/FORM -->
-
-
-						<!-- INFO 
-						<div class="col-md-3">
-
-							<h2>Visit Us</h2>
-
-							<p>
-								Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.
-							</p>
-
-							<hr />
-
-							<p>
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Street Name, City Name, Country</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">1800-555-1234</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">mail@yourdomain.com</a></span>
-							</p>
-
-							<hr />
-
-							<h4 class="font300">Business Hours</h4>
-							<p>
-								<span class="block"><strong>Monday - Friday:</strong> 10am to 6pm</span>
-								<span class="block"><strong>Saturday:</strong> 10am to 2pm</span>
-								<span class="block"><strong>Sunday:</strong> Closed</span>
-							</p>
-
-						</div>
-					INF0-->
-
-					</div>
-
-				</div>
-			</section>
-			<!-- / -->
-
-
-
-<!--Contact-->
 
 
 <!-- FOOTER -->
