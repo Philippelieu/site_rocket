@@ -1,5 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+	<style> 
+
+		<!--
+var residential
+var commercial
+var corporatif
+var hybride
+var nbappart
+var nbetage
+var nbssol
+var nbcommerce
+var nbparking
+var nbcage
+var personmax
+var heureouv
+var prixstandard
+var prixpremium
+var prixexcelum
+var inststandard
+var instpremium
+var instexcelium
+-->	
+		#div_typeprop {
+			width: 500px;
+			height: 60px;
+			background-color:white;
+			display: none;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-right: 150px;
+			margin-left: 80px;
+
+		}
+		#div_nbappart {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nbetage {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nbssol {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nbcommerce{
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+			justify-content: center;
+		}
+		#div_nbparking {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nbcage{
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_personmax {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#myDIV_9 {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#myDIV_10 {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		
+		</style>
 	<head>
 		<meta charset="utf-8" />
 		<title>ROCKET- Multipurpose + Admin</title>
@@ -246,40 +336,771 @@
 					</div>
 				
 <!--FORMULAIRE-->	
-					<div></div>
-						<h3 class="mt-10"></h3>You wish to have a price for your future project, I invite you to answer a few questions.</h3>
+<div class= "container">
+	<p> </p>
+</div>
+				<div class= "container">
+					<div class="btn-group">
+						<p>Test</p>
+						<button type="button" class="btn btn-default">Menu déroulant</button>
+						<button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    <span class="caret"></span>
+						 <span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<ul class="dropdown-menu">
+						   <li><a href="#" title="Lien 1"> </a></li>
+						   <li><a href="#" title="Lien 2">Residencial</a></li>
+						   <li><a href="#" title="Lien 3">Commercial</a></li>
+						   <li><a href="#" title="Lien 4">Corporate</a></li>
+						   <li><a href="#" title="Lien 5">Hybride</a></li>
+						</ul>
+					  </div>
+					  <div id="myDIV_1">
+						Enter the number of the appartements<br>
+						
+						 <input id="NberAppartement"    type="number" name="" value="" oninput="Call()" onkeyup="Call()"  >   
+						</div>
 
-					</div>
+</div>
+
 
 <!--FORMULAIRE-->
-				<div class="container">
+<!--FORMULAIRE-->
 
-<form>
+<!--
+var residential
+var commercial
+var corporatif
+var hybride
+var nbappart
+var nbetage
+var nbssol
+var nbcommerce
+var nbparking
+var nbcage
+var personmax
+var heureouv
+var prixstandard
+var prixpremium
+var prixexcelum
+var inststandard
+var instpremium
+var instexcelium
+
+
+-->
+
+<div class="container">
+
+
+
+	<br>
+	<h1>Price Request</h1> <br><br>
+	<!--<p>First, select a type of service</p> -->
+	<!--
+	<p  id="menu"> 
+	<br>  -->
+	<p> <strong>First, select the type of service in the list below</strong> <p> 
+	 
 	
-	<div class="form-group">
-	  <label for="exampleFormControlSelect1">What type of building do you operate</label>
-	  <select class="form-control" id="exampleFormControlSelect1">
+	<select id="mySelect" onchange="TriEnlever()">
 		<option> </option>
 		<option>Residential</option>
 		<option>Commercial</option>
 		<option>Corporate</option>
-		<option>Hybride</option>
+		<option>Hybrid</option>
 	  </select>
+	
+	<br><br>
+	 
+	
+	 <!-- document.getElementById("menu").innerHTML = x.options[i].text;  (mettre après: var i = x.selectedIndex;
+	   de la fonction ci-dessous: function MaFonctionDeSelection() {    -->
+	<script>
+	function MaFonctionDeSelection() {
+		var x = document.getElementById("mySelect");
+		var i = x.selectedIndex;
+	  
+		return i;
+	}
+	</script>
+	<!--
+	<button type="button" onclick="TriEnlever()">Choisi le div </button> 
+	 -->
+	 
+	 
+	 
+	 
+	<div id="myDIV_1">
+	Enter the number of the appartements<br>
+	
+	 <input id="NberAppartement"    type="number" name="" value="" oninput="Call()" onkeyup="Call()"  >   
 	</div>
-  </form>
- 
-<form>
-    <label class="radio-inline">
-      <input type="radio" name="optradio" checked> Standard Service
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio"> Premium Service
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="optradio"> Excelium Service
-    </label>
-  </form>
+	
+	<div id="myDIV_2">
+	Enter the number of the floors<br>
+	
+	 <input id="NbreFloor"    type="number" name=""  value=""  oninput="Call()"  onkeyup="Call()"> 
+	</div>
+	
+	<div id="myDIV_3">
+	Enter the number of the basements<br>
+	
+	 <input id="NbreBasements"    type="number" name=""  value="" oninput="Call()"  onkeyup="Call()">  
+	</div> 
+	
+	<div id="myDIV_4">
+	Enter the number of the separate businesses<br>
+	
+	 <input id="NbreSeparateBusiness"    type="number" name="" value="" oninput="Call()"  onkeyup="Call()" >    
+	</div>
+	
+	<div id="myDIV_5">
+	Enter the number of parking available<br>
+	
+	 <input id="NbreParking"    type="number" name=""  value="" oninput="Call()"  onkeyup="Call()" > 
+	</div>
+	
+	<div id="myDIV_6">
+	Enter the number of lift cages to deploy<br>
+	
+	 <input id="NberCage"    type="number" name=""  value=""  oninput="Call()"  onkeyup="Call()">   
+	</div>
+	
+	<div id="myDIV_7">
+	Enter the number of separate rental companies<br>
+	 <input id="NbreRentalCompagnies"    type="number" name=""  value="" oninput="Call()"  onkeyup="Call()" >   
+	</div>
+	
+	<div id="myDIV_8">
+	Enter the number of occupants per floor<br>
+	
+	 <input id="NbreMaxPersonByfloor"    type="number" name=""  value="" input="Call()"  onkeyup="Call()">   
+	</div>
+	
+	<div id="myDIV_9">
+	Enter the number of hours of activity of the building<br>
+	
+	 <input id="NbreHoursActivity"    type="number" name=""  value=""  input="Call()"  onkeyup="Call()">   
+	</div>
+	
+	<div id="myDIV_10">
+	<br>
+	
+	The number of elevators you need: <input id="ResultatAscenseur"    type="number" name="" value=""  disabled>   
+	</div>
+	<br>
+	  <p><strong>Second, chose the quality of the elevator below</strong></p>
+	  <input id =PriceUnitStandard type="radio" name="services" value="standard"  onchange="Price()" > Standard<br>
+	  <input id =PriceUnitPremium  type="radio" name="services" value="premium" onchange="Price()"> Premium<br>
+	  <input id =PriceUnitExcelium type="radio" name="services" value="other" onchange="Price()"> Excelium<br><br>
+	
+	  <br>Price of an elevator $: <input id="PriceUnit" type ="text"  disabled>
+	  <br>Installation costs $: <input id="InstallationCost" type ="text"  disabled>
+	  <br>Total cost $: <input id="TotalCost" type ="text"  disabled>
+	
+	
+	
+	
+	
+	  <!--
+	<button type="button" onclick="removeElement()">Fait disparaitre </button> 
+	<br>
+	<button onclick="resetElement()">Reset All      </button>
+	<br>
+	<button onclick="ApparaitouDisparait()">Apparait_et_Disparait </button>
+	-->  
+	 <br>   
+	 <p id="demo2"></p>
+	
+	 
+	 <!--
+	<script>
+	function removeElement() {
+		document.getElementById("myDIV_1").style.display = "none";
+	}
+	</script>
+	
+	
+	<script>
+	function resetElement() {
+	 
+			   document.getElementById("myDIV_1").style.display = "block"; 
+	}
+	</script>
+	
+	
+	<script>
+	function ApparaitouDisparait(){
+		var x = document.getElementById('myDIV_1');
+		if (x.style.display === 'none') {
+			x.style.display = 'block';
+		} else {
+			x.style.display = 'none';
+		}
+	}
+	</script>
+	
+	-->
+	
+	<!-- Fonctions qui ajoute les champs du formulaire de soumission selon
+	le choix dans le menu déroulant (Rés., Com., Corp., ou Hybride) en fonctions des
+	paramêtres respectifs du calcul du résultat le Nombre Ascenceurs -->
+	
+	
+	
+	
+	<script> 	
+		
+		function Call()  {
+			   FormulesSelected();
+			  
+	   
+						 }</script>
+	
+	
+	<script>
+	
+	
+		function FormulesSelected()  {
+		
+	   var service =  MaFonctionDeSelection();  
+	   
+	   
+	   if ( service == 1 )
+	   {
+		  ResultNumberResidentialElevators(); 
+	   }
+	   
+	   if ( service == 2 )
+	   {
+		  ResultNumberCommercialElevators(); 
+		  
+	   }
+	   
+	   if ( service == 3 )
+	   {
+		  ResultNumberCorporateElevators(); 
+	   }
+	   
+	   if ( service == 4 )
+	   {
+		  ResultNumberCorporateElevators(); 
+	   }
+	   
+	   
+	   
+	}
+	</script>
+	
+	<!--Formule  Residentiel Nombre Ascenseurs -->
+	<script>
+		function ResultNumberResidentialElevators() {
+		   
+			
+		
+			var x = document.getElementById("NberAppartement").value || 0 ;
+			var y = document.getElementById("NbreFloor").value || 0 ;
+			var z = document.getElementById("NbreBasements").value || 0;
+			var Nber = Math.ceil( x /(y*6) ); 
+				  
+				   
+			var colonne =  Math.ceil(y /20);
+			  
+			var  NberElevators = Nber*colonne;
+			if (x != 0  && y != 0   && z  != 0  )
+			{document.getElementById("ResultatAscenseur").value= NberElevators;}
+			else {
+					document.getElementById("ResultatAscenseur").value = 0;
+					}
+			
+			return NberElevators;
+		
+		}
+		</script>
+	
+	<!--Formule  Commercial Nombre Ascenseurs -->
+	<script>
+		function ResultNumberCommercialElevators() {
+				   var c5 =   document.getElementById ("NbreParking").value || 0 ;
+				   var  b =   document.getElementById ("NbreBasements").value || 0 ;
+				   var  f =   document.getElementById (	"NbreFloor").value 	|| 0 ;
+				   var  c4 =   document.getElementById ("NbreSeparateBusiness").value ||  0 ;
+	
+					var x = document.getElementById("NberCage").value || 0;
+				
+				if (c5 != 0  && b != 0   && f  != 0  &&  c4 != 0      )
+				 {document.getElementById("ResultatAscenseur").value = x;}
+				else {
+					document.getElementById("ResultatAscenseur").value = 0;
+					}
+					return x;
+			}												
+	</script>
+	
+	<!--Formule  Corporate et Hybride Nombre Ascenseurs -->
+	<script>
+		function ResultNumberCorporateElevators() {
+		   service = MaFonctionDeSelection();
+	
+			var Fc =  document.getElementById("NbreFloor").value  || 0 ;
+			var F = Number(document.getElementById("NbreFloor").value || 0  );
+			
+			var Bc =   document.getElementById("NbreBasements").value;
+			var B = Number(document.getElementById("NbreBasements").value || 0 );
+	
+			var M = document.getElementById("NbreMaxPersonByfloor").value || 0 ;
+			var SB = document.getElementById("NbreSeparateBusiness").value || 0 ;
+			var P = document.getElementById("NbreParking").value || 0 ;
+			var H = document.getElementById("NbreHoursActivity").value || 0 ;
+			var R = document.getElementById("NbreRentalCompagnies").value || 0 ;
+		   
+		   
+			var Nber = Math.ceil( M*(F+B)/1000 ); 
+			
+													
+			var colonne =  Math.ceil((F+B)/20);
+		 
+			var NberResultElevatorsByCol =  Math.ceil(Nber/colonne);
+		   
+			var NberElevators=   NberResultElevatorsByCol*colonne;        
+			console.log(service);
+			
+			
+				 document.getElementById("ResultatAscenseur").value = NberElevators;  
+		   
+			
+				
+	
+			
+			
+			
+			
+			return NberElevators;
+		
+		}
+		</script>
+	
+		<!-- Prix unitaire ascenseur et  cout installation mettre soit Residential 
+		ou Commercial sur ResulNumberResidentialElevators() -->
+	
+	<script>
+		function Price()  {
+			 var service = MaFonctionDeSelection();
+			 
+			 
+			 if (service == 1)  {
+			 var NumberCorporateElevators = ResultNumberResidentialElevators();
+												}
+			 if (service == 2)  {
+			 var NumberCorporateElevators = ResultNumberCommercialElevators();
+												}									
+	
+			 if (service == 3 || service == 4 )  {
+			 var NumberCorporateElevators = ResultNumberCorporateElevators();
+												 }
+			 
+												
+												
+												
+			 var PriceInstallElevators;							   
+			 var TotalCost;
+			 
+			
+			 
+			 
+			 if  (document.getElementById("PriceUnitStandard").checked) { 
+		   
+			 
+			 
+			 document.getElementById("PriceUnit").value="7565.00";
+			 PriceInstallElevators =  7565*0.10*NumberCorporateElevators;
+			 PriceInstallElevators =  PriceInstallElevators.toFixed(2);
+			
+			 
+			 TotalCost = 7565*1.1*NumberCorporateElevators;
+			 TotalCost = TotalCost.toFixed(2);
+											 
+			 document.getElementById("InstallationCost").value = PriceInstallElevators ;
+			document.getElementById("TotalCost").value = TotalCost;
+								} 
+			 
+			 if  (document.getElementById("PriceUnitPremium").checked)	{ 		               
+			 document.getElementById("PriceUnit").value="12345.00"; 
+			 PriceInstallElevators =  12345*0.13*NumberCorporateElevators;
+			 PriceInstallElevators =  PriceInstallElevators.toFixed(2);
+			 
+			 
+			 TotalCost = 7565*1.13*NumberCorporateElevators;
+			 TotalCost = TotalCost.toFixed(2);
+										   
+			 document.getElementById("InstallationCost").value = PriceInstallElevators ;
+			 document.getElementById("TotalCost").value = TotalCost;
+								}
+					
+			 if  (document.getElementById("PriceUnitExcelium").checked)	{ 	
+			 
+			 document.getElementById("PriceUnit").value="15400.00"; 
+			 PriceInstallElevators =  15400*0.16*NumberCorporateElevators;
+			 PriceInstallElevators =  PriceInstallElevators.toFixed(2);
+			
+			 
+			 TotalCost = 7565*1.16*NumberCorporateElevators;
+			 TotalCost = TotalCost.toFixed(2);
+											 
+			 document.getElementById("InstallationCost").value = PriceInstallElevators ;
+			document.getElementById("TotalCost").value = TotalCost;
+									 }
+					
+					
+		
+		}
+		</script>
+		
+		
+	
+	<script>
+	function AddElementDiv1() {
+		document.getElementById("myDIV_1").style.display = "block";
+	}
+	</script>
+	
+	<script>
+	function AddElementDiv2() {
+		document.getElementById("myDIV_2").style.display = "block";
+	}
+	</script>
+	
+	<script>
+	function AddElementDiv3() {
+		document.getElementById("myDIV_3").style.display = "block";
+	}
+	</script>
+	
+	<script>
+	function AddElementDiv4() {
+		document.getElementById("myDIV_4").style.display = "block";
+	}
+	</script>
+	
+	<script>
+	function AddElementDiv5() {
+		document.getElementById("myDIV_5").style.display = "block";
+	}
+	</script>
+	
+	<script>
+	function AddElementDiv6() {
+		document.getElementById("myDIV_6").style.display = "block";
+	}
+	</script>
+	
+	<script>
+	function AddElementDiv7() {
+		document.getElementById("myDIV_7").style.display = "block";
+	}
+	</script>
+	
+	<script>
+	function AddElementDiv8() {
+		document.getElementById("myDIV_8").style.display = "block";
+	}
+	</script>
+	
+	<script>
+	function AddElementDiv9() {
+		document.getElementById("myDIV_9").style.display = "block";
+	}
+	</script>
+	
+	<script>
+		function AddElementDiv10() {
+			document.getElementById("myDIV_10").style.display = "block";
+		}
+	</script>
+	
+	
+	<!-- Fonctions qui suppriment les champs du formulaire de soumission selon
+	le choix dans le menu déroulant (Rés., Com., Corp., ou Hybride) en fonctions des
+	paramêtres respectifs du calcul du résultat le Nombre Ascenceurs -->
+	
+	<script>
+	function RemoveElementDiv1() {
+		document.getElementById("myDIV_1").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv2() {
+		document.getElementById("myDIV_2").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv3() {
+		document.getElementById("myDIV_3").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv4() {
+		document.getElementById("myDIV_4").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv5() {
+		document.getElementById("myDIV_5").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv6() {
+		document.getElementById("myDIV_6").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv7() {
+		document.getElementById("myDIV_7").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv8() {
+		document.getElementById("myDIV_8").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv9() {
+		document.getElementById("myDIV_9").style.display = "none";
+	}
+	</script>
+	
+	<script>
+	function RemoveElementDiv10() {
+		document.getElementById("myDIV_10").style.display = "none";
+	}
+	</script>
+	
+	
+	
+	<!-- Selon la sélection du menu déroulant (Rés., Com., Corp., ou Hybride)  les 
+	champs de leurs paramètres vont apparaîtres avec l'appel des fonctions  
+	'AddElementDiv() et RemoveElementDiv2(). Par défaut dans le fichier .css leur 
+	valeur est définit à ne pas afficher, soit définit par #myDIV_1 { display: none; -->
+	
+	<script>
+		function TriEnlever( )
+	 {
+		
+		
+		if (MaFonctionDeSelection()  === 0)  {
+			 
+			 
+			
+			 RemoveElementDiv1();
+			 RemoveElementDiv2();
+			 RemoveElementDiv3();
+			 RemoveElementDiv4();
+			 RemoveElementDiv5();
+			 RemoveElementDiv6();
+			 RemoveElementDiv7();
+			 RemoveElementDiv8();
+			 RemoveElementDiv9(); 
+			 RemoveElementDiv10(); 								}  
+		
+		if	(MaFonctionDeSelection() === 1)	{
+			
+						
+			AddElementDiv1();
+			AddElementDiv2();
+			AddElementDiv3();
+			AddElementDiv10()
+			RemoveElementDiv4();
+			RemoveElementDiv5();
+			RemoveElementDiv6();
+			RemoveElementDiv7();
+			RemoveElementDiv8();
+			RemoveElementDiv9();            					} 
+											
+		if	(MaFonctionDeSelection() === 2)	{
+			 
+			
+											AddElementDiv4();
+											AddElementDiv2();
+											AddElementDiv3();
+											AddElementDiv5();
+											AddElementDiv6();
+											AddElementDiv10();
+											RemoveElementDiv1();
+											RemoveElementDiv7();
+											 RemoveElementDiv8();
+											 RemoveElementDiv9();}  
+									
+		if	(MaFonctionDeSelection() === 3)	{
+			
+									
+											AddElementDiv7();
+											AddElementDiv2();
+											AddElementDiv3();
+											AddElementDiv5();
+											AddElementDiv8();
+											AddElementDiv10();
+											RemoveElementDiv1();
+											RemoveElementDiv4();
+											 RemoveElementDiv6();
+											 RemoveElementDiv9();
+													   }  
+		if	( MaFonctionDeSelection() === 4)	{
+			
+											
+											AddElementDiv4();
+											AddElementDiv2();
+											AddElementDiv3();
+											AddElementDiv5();
+											AddElementDiv8();
+											AddElementDiv9();
+											AddElementDiv10();
+											RemoveElementDiv1();
+											RemoveElementDiv6();
+											 RemoveElementDiv7();
+													}
+																		  
+			document.getElementById("NberAppartement" ).value = ""; 
+			document.getElementById("NbreFloor" ).value = "";
+			document.getElementById("NbreBasements" ).value = ""; 
+			document.getElementById("NbreSeparateBusiness" ).value = "";
+			document.getElementById("NbreParking" ).value = ""; 
+			document.getElementById( "NberCage").value = "";
+			document.getElementById("NbreRentalCompagnies" ).value = ""; 
+			document.getElementById("NbreMaxPersonByfloor"  ).value = "";
+			document.getElementById( "NbreHoursActivity").value = ""; 
+			document.getElementById("ResultatAscenseur" ).value = "";
+	
+	
+	
+	
+	
+	
+	}
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+								<!--
+								<div class="mt-30">
+									<a href="#" class="btn btn-3d btn-lg btn-teal"><i class="glyphicon glyphicon-th-large"></i>FREE TRIAL</a>
+									<span class="fs-17 hidden-xs-down">&nbsp; OR &nbsp;</span>
+									<a href="#" class="btn btn-3d btn-lg btn-red"><i class="glyphicon glyphicon-user"></i>START FOR A SIBSCRIPTION</a>
+								</div>
+								-->
+	
+							</div>
+	
+						</div>
+					</div>
+				</section>
+				<!-- /RESIDENTIAL -->
+	
+	
+	
+	
+				<!-- BUTTON CALLOUT -->
+				<a href="Index.html#contact" class="btn btn-xlg btn-blue fs-20 fullwidth m-0 rad-0 p-40">
+					<span class="font-lato fs-30">
+						Did Rocket Elevators convinced you? 
+						<strong>Contact us &raquo;</strong>
+					</span>
+				</a>
+
+				<!-- /BUTTON CALLOUT -->
+	
+	
+				<!--
+				<!- Services ->
+				<section id="services">
+					<div class="container">
+	
+						<div class="row">
+							<div class="col-sm-4">
+								<a class="image-hover lightbox" href="https://vimeo.com/ondemand/buildingwithawareness/108669033" data-plugin-options='{"type":"iframe"}'>
+									<span class="image-hover-icon image-hover-dark"><!- image-hover-light | image-hover-dark ->
+										<i class="fa fa-vimeo-square"><!- video icon -></i>
+									</span>
+									<img class="img-fluid" src="demo_files/images/thematics/rocket/AdobeStock_122227340_600_300.jpg" alt="img" />
+								</a>
+	
+								<h3 class="mt-10">Winning Awards and Projects</h3>
+								<!-
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+								->
+								<br />
+								<a href="#work" class="btn btn-default">SHOW PORTFOLIO</a>
+							</div>
+	
+							<div class="col-sm-4">
+								<a class="image-hover lightbox" href="https://www.youtube.com/watch?v=ZhCyoDlltbo" data-plugin-options='{"type":"iframe"}'>
+									<span class="image-hover-icon image-hover-dark"><!- image-hover-light | image-hover-dark ->
+										<i class="fa fa-youtube-square"><!- video icon -></i>
+									</span>
+									<img class="img-fluid" src="demo_files/images/thematics/rocket/ResidentialServices.jpg" alt="img" />
+								</a>
+								<h3 class="mt-10">Residential Services</h3>
+								<!-
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+								->
+								<br />
+								
+								<a href="index-onepage-construction_Residential.html" class="btn btn-default">SHOW RESIDENTIAL SERVICES</a>
+							</div>
+	
+							<div class="col-sm-4">
+								<img class="img-fluid" src="demo_files/images/thematics/rocket/AdobeStock_66781279.jpeg" alt="img" />
+								<h3 class="mt-10">Corporate Services</h3>
+								<br />
+								<!-
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+								->
+								<a href="#" class="btn btn-default">SHOW CORPORATE SERVICES</a>
+							</div>
+	
+						</div>
+	
+					</div>
+				</section>
+				<!- /Services ->
+				-->
+	
+				
+	
+				<!--
+				<!- Parallax ->
+				<section class="parallax parallax-1" style="background-image: url('demo_files/images/1200x800/34-min.jpg');">
+					<div class="overlay dark-5"><!- dark overlay [1 to 9 opacity] -></div>
+	
+					<div class="container">
+	
+						<div class="text-center">
+							<h2 class="fs-40 fw-300"> Rocket Elevators Since 1976</h2>
+							<a class="btn btn-default btn-lg" href="#">GET A SUBMISSION <i class="fa fa-angle-right"></i></a> 
+							&nbsp; OR &nbsp; 
+							<a class="btn btn-default btn-lg" href="#contact">CONTACT US <i class="fa fa-angle-right"></i></a>
+						</div>
+	
+					</div>
+				</section>
+				<!- /Parallax ->
+</div>						-->
 </div>
+
+<!--FORMULAIRE-->	
 
 <!-- FOOTER -->
 			<footer id="footer">
@@ -443,7 +1264,7 @@
 
 		<!-- JAVASCRIPT FILES -->
 		<script>var plugin_path = 'assets/plugins/';</script>
-		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+		<script src="assets/plugins/jquery/jquery-3.4.1.min.js"></script>
 
 		<script src="assets/js/scripts.js"></script>
 		
