@@ -9753,3 +9753,84 @@ section.dark-2 div.category-grid .card {
 	color:#999 !important; 
 	z-index:100;
 }
+
+<style>
+		#div_nbappart{
+			width: 500px;
+			height: 60px;
+			background-color:white;
+			display: show;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-right: 150px;
+			margin-left: 80px;
+
+		}
+		/*#div_nbetage{
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: show;
+		}
+		#div_nbssol{
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nbcommerce {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nbparking {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+			justify-content: center;
+		}
+		#div_nbcage{
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nblocation {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_maxfloor {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nbhours {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		#div_nbelevatorneed {
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: none;
+		}
+		
+		#container_quote{
+			width: auto;
+			height: auto;
+			background-color: white;
+			display:show;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-right: 150px;
+			margin-left: 80px;
+		}
+
+		</style>
