@@ -1,73 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 	<style>
-		#myDIV_1 {
+		#div_nbappart{
 			width: 500px;
 			height: 60px;
 			background-color:white;
-			display: none;
+			display: show;
 			margin-top: 100px;
 			margin-bottom: 100px;
 			margin-right: 150px;
 			margin-left: 80px;
 
 		}
-		#myDIV_2 {
+		#div_nbetage{
+			width: 500px;
+			height: 60px;
+			background-color: white;
+			display: show;
+		}
+		#div_nbssol{
 			width: 500px;
 			height: 60px;
 			background-color: white;
 			display: none;
 		}
-		#myDIV_3 {
+		#div_nbcommerce {
 			width: 500px;
 			height: 60px;
 			background-color: white;
 			display: none;
 		}
-		#myDIV_4 {
-			width: 500px;
-			height: 60px;
-			background-color: white;
-			display: none;
-		}
-		#myDIV_5 {
+		#div_nbparking {
 			width: 500px;
 			height: 60px;
 			background-color: white;
 			display: none;
 			justify-content: center;
 		}
-		#myDIV_6 {
+		#div_nbcage{
 			width: 500px;
 			height: 60px;
 			background-color: white;
 			display: none;
 		}
-		#myDIV_7 {
+		#div_nblocation {
 			width: 500px;
 			height: 60px;
 			background-color: white;
 			display: none;
 		}
-		#myDIV_8 {
+		#div_maxfloor {
 			width: 500px;
 			height: 60px;
 			background-color: white;
 			display: none;
 		}
-		#myDIV_9 {
+		#div_nbhours {
 			width: 500px;
 			height: 60px;
 			background-color: white;
 			display: none;
 		}
-		#myDIV_10 {
+		#div_nbelevatorneed {
 			width: 500px;
 			height: 60px;
 			background-color: white;
 			display: none;
 		}
 		
+		#container_quote{
+			width: 500px;
+			height: 500px;
+			background-color: white;
+			display:show;
+			margin-top: 100px;
+			margin-bottom: 100px;
+			margin-right: 150px;
+			margin-left: 80px;
+		}
+
 		</style>
 	
 	<head>
@@ -85,6 +96,9 @@
 
 		<!-- CORE CSS -->
 		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- mise en page quote form-->
+		<link rel="stylesheet"href="style_form_quote".css>
 
 		<!-- REVOLUTION SLIDER -->
 		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
@@ -315,211 +329,263 @@
 		<!-- /BUTTON CALLOUT -->
 					</div>
 				
-<!--FORMULAIRE-->
-<!--
-<div class= "container">
-	<p> </p>
-</div>
-				<div class= "container">
-					<div class="btn-group">
-						<p>Test</p>
-						<button type="button" class="btn btn-default">Menu déroulant</button>
-						<button type="button" class="btn btn-blue dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">    <span class="caret"></span>
-						 <span class="sr-only">Toggle Dropdown</span>
-						</button>
-						<ul class="dropdown-menu">
-						   <li><a href="#" title="Lien 1"> </a></li>
-						   <li><a href="#" title="Lien 2">Residencial</a></li>
-						   <li><a href="#" title="Lien 3">Commercial</a></li>
-						   <li><a href="#" title="Lien 4">Corporate</a></li>
-						   <li><a href="#" title="Lien 5">Hybride</a></li>
-						</ul>
-					  </div>
-					  <div id="myDIV_1">
-						Enter the number of the appartements<br>
+<!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE-->
+		
+<div id="container_quote">
+
+		<h1>Would you like a price?</h1>
+		<p><h4>Follow the few steps below</h4></p>
+
+		<p><strong>What type of building do you have</strong></p>
+
+				<select id="type_building">
+					<option value="none">None</option>
+					<option value="Residential">Residential</option>
+					<option value="Commercial">Commercial</option>
+					<option value="Corporate">Corporate</option>
+					<option value="Hybrid">Hybrid</option>
+				</select>
+
+				<div id="div_appart">
+				How many appartments in the building ? <br>
+				<input id="nbappart" type="number" name="" value="">
+			
+				</div>
+
+				<div id="#div_nbetage">
+					How many floor in the building ? <br>
+					<input id="nbetage" type="number" name="" value="">
+													
+					</div>
+				<div id="#div_nbssol">
+				How many basement in the building ? <br>
+				<input id="nbssol" type="number" name="" value="">
+				
+				</div>
+
+				<div id="#div_nbcommerce">
+				How many seperate businesses his deployed <br>
+				<input id="nbcommerce" type="number" name="" value="">
+					
+				</div>
+
+				<div id="#div_nbparking">
+				How many parking available ? <br>
+				<input id="nbparking" type="number" name="" value="">
 						
-						 <input id="NberAppartement"    type="number" name="" value="" oninput="Call()" onkeyup="Call()"  >   
-						</div>
+				</div>
 
+				<div id="#div_nbcage">
+				How many elevator cage in the building ? <br>
+				<input id="nbcage" type="number" name="" value="">
+							
+				</div>
+
+				<div id="#div_nblocation">
+				How many separate rental compagnies ? <br>
+				<input id="nblocation" type="number" name="" value="">
+								
+				</div>
+
+				<div id="#div_maxfloor">
+				How many occupants per floor (maximum) ? <br>
+				<input id="maxfloor" type="number" name="" value="">
+									
+				<div>
+
+				<div id="#div_nbhours">
+				How many hours of activity in the building ? <br>
+				<input id="nbhours" type="number" name="" value="">
+										
+				</div>
+
+				<div id="#div_nbelevatorneed">
+				How many elevators you need ? <br>
+				<input id="nbelevatorneed" type="number" name="" value="">
+											
+				<div>
+					
+
+		
+		
+<div>
 </div>
--->
+<!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE-->
 
-<!--FORMULAIRE-->
-
-
-<!-- FOOTER -->
-			<footer id="footer">
-				<div class="container">
-			
-					<div class="row">
-						
-						<div class="col-md-3">
-							<!-- Footer Logo -->
-							<img class="footer-logo" src="https://i.postimg.cc/g0bbmbb8/R2_150x.png" alt="" />
-			
-							<!-- Short Description -->
-							<p>LET’S GET TOGETHER TO GO UP TO THE NEXT FLOOR !.</p>
-			
-							<!-- Contact Address -->
-							<address>
-								<ul class="list-unstyled">
-									<li class="footer-sprite address">
-										725 Lebourneuf<br>
-										Quebec, Quebec<br>
-										G2J 0C4 Canada<br>
+	<!-- FOOTER -->
+				<footer id="footer">
+					<div class="container">
+				
+						<div class="row">
+							
+							<div class="col-md-3">
+								<!-- Footer Logo -->
+								<img class="footer-logo" src="https://i.postimg.cc/g0bbmbb8/R2_150x.png" alt="" />
+				
+								<!-- Short Description -->
+								<p>LET’S GET TOGETHER TO GO UP TO THE NEXT FLOOR !.</p>
+				
+								<!-- Contact Address -->
+								<address>
+									<ul class="list-unstyled">
+										<li class="footer-sprite address">
+											725 Lebourneuf<br>
+											Quebec, Quebec<br>
+											G2J 0C4 Canada<br>
+										</li>
+										<li class="footer-sprite phone">
+											Phone: 581-701-003
+										</li>
+										<li class="footer-sprite email">
+											<a href="mailto:support@rocketelevator.com">support@rocketelevator.com</a>
+										</li>
+									</ul>
+								</address>
+								<!-- /Contact Address -->
+				
+							</div>
+				
+							<div class="col-md-3">
+				
+								<!-- Latest Blog Posts -->
+								<h4 class="letter-spacing-1">NEWS ET EVENTS</h4>
+								<ul class="footer-posts list-unstyled">
+									<li>
+										<a href="#">2020 Conference of NAEC</a>
+										<small>29th January 2020</small>
 									</li>
-									<li class="footer-sprite phone">
-										Phone: 581-701-003
+									<li>
+										<a href="#">United 2020, Convention and Conference, Houston</a>
+										<small>15th January 2020</small>
 									</li>
-									<li class="footer-sprite email">
-										<a href="mailto:support@rocketelevator.com">support@rocketelevator.com</a>
+									<li>
+										<a href="#">IN MEMORIAM : Jeff Cooper</a>
+										<small> 1st November 2019</small>
 									</li>
 								</ul>
-							</address>
-							<!-- /Contact Address -->
-			
-						</div>
-			
-						<div class="col-md-3">
-			
-							<!-- Latest Blog Posts -->
-							<h4 class="letter-spacing-1">NEWS ET EVENTS</h4>
-							<ul class="footer-posts list-unstyled">
-								<li>
-									<a href="#">2020 Conference of NAEC</a>
-									<small>29th January 2020</small>
-								</li>
-								<li>
-									<a href="#">United 2020, Convention and Conference, Houston</a>
-									<small>15th January 2020</small>
-								</li>
-								<li>
-									<a href="#">IN MEMORIAM : Jeff Cooper</a>
-									<small> 1st November 2019</small>
-								</li>
-							</ul>
-							<!-- /Latest Blog Posts -->
-			
-						</div>
-			
-						<div class="col-md-2">
-			
-							<!-- Links -->
-							<h4 class="letter-spacing-1">EXPLORE ROCKET ELEVATORS</h4>
-							<ul class="footer-links list-unstyled">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Portfolio</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Clients</a></li>
-								<li><a href="#">Contact</a></li>
-							</ul>
-							<!-- /Links -->
-			
-						</div>
-			
-						<div class="col-md-4">
-			
-							<!-- Newsletter Form -->
-							<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-			
-							<form action="php/newsletter.php".box-shadow- method="post">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required="required">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-			
-							<!-- Social Icons -->
-							<div class="mt-20">
-			
-								<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
-									<i class="icon-facebook"></i>
-									<i class="icon-facebook"></i>
-								</a>
-			
-								<!--
-									<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
-									<i class="icon-twitter"></i>
-									<i class="icon-twitter"></i>
-								-->
-								</a>
-			
-								<!--
-									<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
-									<i class="icon-gplus"></i>
-									<i class="icon-gplus"></i>
-								-->
-								</a>
-			
-								<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
-									<i class="icon-linkedin"></i>
-									<i class="icon-linkedin"></i>
-								</a>
-			
-								<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
-									<i class="icon-rss"></i>
-									<i class="icon-rss"></i>
-								</a>
-					
+								<!-- /Latest Blog Posts -->
+				
 							</div>
-							<!-- /Social Icons -->
-			
+				
+							<div class="col-md-2">
+				
+								<!-- Links -->
+								<h4 class="letter-spacing-1">EXPLORE ROCKET ELEVATORS</h4>
+								<ul class="footer-links list-unstyled">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#services">Services</a></li>
+									<li><a href="#work">Portfolio</a></li>
+									<li><a href="#news">News</a></li>
+									<li><a href="#clients">Clients</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+								<!-- /Links -->
+				
+							</div>
+				
+							<div class="col-md-4">
+				
+								<!-- Newsletter Form -->
+								<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+								<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+				
+								<form action="php/newsletter.php".box-shadow- method="post">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+										<input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email" required="required">
+										<span class="input-group-btn">
+											<button class="btn btn-success" type="submit">Subscribe</button>
+										</span>
+									</div>
+								</form>
+								<!-- /Newsletter Form -->
+				
+								<!-- Social Icons -->
+								<div class="mt-20">
+				
+									<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+				
+									<!--
+										<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+										<i class="icon-twitter"></i>
+										<i class="icon-twitter"></i>
+									-->
+									</a>
+				
+									<!--
+										<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+										<i class="icon-gplus"></i>
+										<i class="icon-gplus"></i>
+									-->
+									</a>
+				
+									<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+				
+									<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
+										<i class="icon-rss"></i>
+										<i class="icon-rss"></i>
+									</a>
+						
+								</div>
+								<!-- /Social Icons -->
+				
+							</div>
+				
 						</div>
-			
+				
 					</div>
-			
-				</div>
-			
-				<div class="copyright">
-					<div class="container">
-						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms & Conditions</a></li>
-							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
-						</ul>
-						&copy; All Rights Reserved, Company Rocket Elevator 2020
-					
+				
+					<div class="copyright">
+						<div class="container">
+							<ul class="float-right m-0 list-inline mobile-block">
+								<li><a href="#">Terms & Conditions</a></li>
+								<li>&bull;</li>
+								<li><a href="#">Privacy</a></li>
+							</ul>
+							&copy; All Rights Reserved, Company Rocket Elevator 2020
+						
+						</div>
 					</div>
-				</div>
-			</footer>
-		
-<!-- /FOOTER -->
-
-		</div>
-		<!-- /wrapper -->
-
-
-		<!-- SCROLL TO TOP -->
-		<a href="#" id="toTop"></a>
-
-
-		<!-- PRELOADER -->
-		<div id="preloader">
-			<div class="inner">
-				<span class="loader"></span>
+				</footer>
+			
+	<!-- /FOOTER -->
+	
 			</div>
-		</div><!-- /PRELOADER -->
-
-
-		<!-- JAVASCRIPT FILES -->
-		<script>var plugin_path = 'assets/plugins/';</script>
-		<script src="assets/plugins/jquery/jquery-3.4.1.min.js"></script>
-
-		<script src="assets/js/scripts.js"></script>
-		
-		<!-- STYLESWITCHER - REMOVE -->
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
-
-		<!-- REVOLUTION SLIDER -->
-		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
-		<script src="assets/js/view/demo.revolution_slider.js"></script>
-
-	</body>
-</html>
+			<!-- /wrapper -->
+	
+	
+			<!-- SCROLL TO TOP -->
+			<a href="#" id="toTop"></a>
+	
+	
+			<!-- PRELOADER -->
+			<div id="preloader">
+				<div class="inner">
+					<span class="loader"></span>
+				</div>
+			</div><!-- /PRELOADER -->
+	
+	
+			<!-- JAVASCRIPT FILES -->
+			<script>var plugin_path = 'assets/plugins/';</script>
+			<script src="assets/plugins/jquery/jquery-3.4.1.min.js"></script>
+			
+	
+			<script src="assets/js/scripts.js"></script>
+			
+			<!-- STYLESWITCHER - REMOVE -->
+			<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+	
+			<!-- REVOLUTION SLIDER -->
+			<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+			<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+			<script src="assets/js/view/demo.revolution_slider.js"></script>
+	
+		</body>
+	</html>
