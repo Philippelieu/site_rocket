@@ -457,13 +457,19 @@ section.dark h6.page-header {
 
 /* fonts */
 .font-open-sans {
+	font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
 	font-family:'Open Sans',Arial,Helvetica,sans-serif !important;
 }
 .font-lato {
 	font-weight:300;
+	font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
 	font-family:'Lato',Arial,Helvetica,sans-serif !important;
 }
 .font-raleway {
+	font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
 	font-family:'Raleway',Arial,Helvetica,sans-serif !important;
 }
 
@@ -6967,6 +6973,8 @@ section#slider:not(.custom-form) .btn-default {
 		display:inline-block;
 		color: #fff;
 		background-color:rgba(0,0,0,0.7);
+		font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-family:'Lato',Arial,Helvetica,sans-serif;
 		font-weight:300;
 		padding: 6px 15px 8px 15px;
@@ -7017,6 +7025,8 @@ section#slider:not(.custom-form) .btn-default {
 		list-style: none;
 	}
 	.camera_caption {
+		font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;		
 		font-family:'Lato',Arial,Helvetica,sans-serif;
 		font-size:22px;
 		font-weight:300;
@@ -7280,6 +7290,8 @@ section#slider:not(.custom-form) .btn-default {
 		font-size:90px;
 		line-height:90px;
 		margin:0;
+		font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-family:Arial,Helvetica,sans-serif;
 	}
 	#slider div.slider-featured-text h2 {
@@ -7929,6 +7941,8 @@ section.dark #portfolio h3 {
 h1.blog-post-title,
 .blog-post-item h2 {
 	letter-spacing:0;
+	font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 	font-family:'Open Sans',Arial,Helvetica,sans-serif;
 	font-size:22px;
 	margin-bottom:10px;
@@ -8128,6 +8142,8 @@ h1.blog-post-title {
 	}
 .comments small {
 	font-size:12px;
+	font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 	font-family:'Open Sans',Arial,Helvetica,sans-serif;
 	color:#aaa;
 }
@@ -8349,6 +8365,8 @@ li.comment a.comment-author span {
 	line-height:1;
 	color:#ccc;
 	font-weight:bold;
+	font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 	font-family:'Lato','Open Sans',Arial,Helvetica,sans-serif;
 }
 .timeline .timeline-entry>.timeline-vline {
@@ -8374,6 +8392,8 @@ li.comment a.comment-author span {
 	font-size:13px;
 	text-transform:uppercase;
 	font-weight:300;
+	font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 	font-family:'Open Sans',Arial,Helvetica,sans-serif;
 }
 section.alternate .timeline .timeline-entry {
@@ -9040,6 +9060,8 @@ section.dark-2 div.category-grid .card {
 	}
 	#footer ul.footer-list li small {
 		display:block;
+		font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;
 		font-family:'Open Sans',Arial,Helvetica,sans-serif;
 		color:#ddd;
 	}

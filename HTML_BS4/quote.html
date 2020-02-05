@@ -371,15 +371,34 @@ var nbcolumns
 		<p><h4>Follow the few steps below</h4></p>
 
 		<p><strong>What type of building do you have</strong></p>
-
-				<select id="type_building">
-					<option value="none">None</option>
-					<option value="Residential">Residential</option>
-					<option value="Commercial">Commercial</option>
-					<option value="Corporate">Corporate</option>
-					<option value="Hybrid">Hybrid</option>
-				</select>
 				
+				<select id="selectMe">
+					<option value="select">---select---</option>
+					<option value="residential">Residential</option>
+					<option value="commercial">Commercial</option>
+					<option value="corporate">Corporate</option>
+					<option value="hybrid">Hydrid</option>
+
+				</select>
+				<br><br><br>
+				
+				 <div id="residential" class="building_type" >
+				   residential form
+				</div>
+					
+				 <div id="commercial" class="building_type" >
+				   commercial form
+				</div>
+
+				<div id="corporate" class="building_type" >
+					corporate form
+				 </div>
+
+				 <div id="hydrid" class="building_type" >
+					hybrid form
+				 </div>
+
+
 				<script>
 					function MaFonctionDeSelection() {
 						var x = document.getElementById("type_building");
