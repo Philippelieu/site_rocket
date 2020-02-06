@@ -249,6 +249,7 @@
 
 	};
 
+	
 	/*<!--*apparition et disparition de texte champs*************************************************************** */
 	
 	$(document).ready(function () {
@@ -259,6 +260,22 @@
 			$('#'+$(this).val()).show();
 		})
 	});
+
+	/* Calculation Residential*/
+
+
+
+
+	/* Calculation Commercial*/
+
+
+
+	/* Calculation Corporate*/
+
+
+
+	/* Calculation Hydrid*/
+
 
 
 

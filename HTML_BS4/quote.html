@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		
 		<meta charset="utf-8" />
 		<title>ROCKET_ELEVATORS_QUOTE</title>
 		<meta name="description" content="" />
@@ -348,13 +349,24 @@
 	<input type="number" id="nbhours" name="" value="">
 	<br>
 </div>
-
-
 <!--Hybrid fin-->
-	
 
+<!--radio button for service type-->
+<div>
+<p> Select the type of service you want :</p>
+<input id="priceUnitStandard" type="radio" name="service_type" value="standard"> Standard Service<br>
+<input id="priceUnitPremium" type="radio" name="service_type" value="Premium"> Premium Service<br>
+<input id="priceUnitExcelium" type="radio" name="service_type" value="Excelium"> Excelium Service<br>
+
+<div>
+<br> Your Price
+<br>Price of an elevator $: <input id="PriceUnit" type ="text"  disabled>
+<br>Installation costs $: <input id="InstallationCost" type ="text"  disabled>
+<br>Total cost $: <input id="TotalCost" type ="text"  disabled>
 	<!--
-
+var priceUnitStandard
+var priceUnitPremium
+var priceUnitExcelium
 var nbappart
 var nbetage
 var nbssol
@@ -523,7 +535,8 @@ var nbcolumns
 		
 <!-- /FOOTER -->
 
-		</div>
+		</div
+		>
 		<!-- /wrapper -->
 
 
