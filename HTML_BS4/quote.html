@@ -258,68 +258,65 @@
 
 	<!-- Residential debut -->
 	 <div id="residential" class="building_type" >
+		 
 		How many appartments in the building ? <br>
 	<input onchange="residential()" type="number" id="nbappart" name="" value=""/>
 	<br>
 	
 	How many floor in the building ?  <br>
-	<input onchange="residential()" type="number" id="nbetage" name="" value="">
+	<input onchange="residential()" type="number" id="nbetage" name="" value=""/>
 	<br>
 
 	How many basement in the building ?   <br>
-	<input onchange="residential()" type="number" id="nbssol" name="" value="">
+	<input onchange="residential()" type="number" id="nbssol" name="" value=""/>
 	<br>
 	</div>
 	
 	<br>
 
-
-	<!-- Residential fin -->
-
-
-	
 	<!--Commercial debut-->
 	
 	<div id="commercial" class="building_type" >
 		
 	How many seperate businesses his deployed ? <br>
-	<input type="number" id="nbcommerce" name="" value="">
+	<input onchange="commercial()" type="number" id="nbcommerce" name="" value="">
 	<br>
 	How many floor in the building ?  <br>
-	<input type="number" id="nbfloor" name="" value="">
+	<input onchange="commercial()" type="number" id="nbfloor" name="" value="">
 	<br>
 	How many basement in the building ? <br>
-	<input type="number" id="nbssol" name="" value="">
+	<input onchange="commercial()" type="number" id="nbssol" name="" value="">
 	<br>
 	How many parking available ? <br>
-	<input type="number" id="nbparking" name="" value="">
+	<input onchange="commercial()" type="number" id="nbparking" name="" value="">
 	<br>
 	How many elevator cage in the building ?  <br>
-	<input type="number" id="nbcage" name="" value="">
+	<input onchange="commercial()" type="number" id="nbcage" name="" value="">
 	<br>
 	
 	
 	</div>
 	
-	<!--Commercial fin -->
+	
 
 	<!--Corporate debut-->
 
 	<div id="corporate" class="building_type" >
+
 	How many separate rental compagnies ?   <br>
-	<input type="number" id="nbseparate_rental" name="" value="">
+	<input onchange="corporate()" type="number" id="nbseparate_rental" name="" value="">
 	<br>
 	How many floor in the building ?  <br>
-	<input type="number" id="nbfloor" name="" value="">
+	<input onchange="corporate()" type="number" id="nbfloor" name="" value="">
 	<br>
 	How many basement in the building ? <br>
-	<input type="number" id="nbssol" name="" value="">
+	<input onchange="corporate()" type="number" id="nbssol" name="" value="">
 	<br>
 	How many parking available ? <br>
-	<input type="number" id="nbparking" name="" value="">
+	<input onchange="corporate()" type="number" id="nbparking" name="" value="">
 	<br>
 	How many occupants per floor (maximum) ?<br>
-	<input type="number" id="maxfloor" name="" value="">
+	<input onchange="corporate()" type="number" id="maxfloor" name="" value="">
 	<br>
 
 	</div>
@@ -331,22 +328,22 @@
 	<div id="hybrid" class="building_type" >
 		
 	How many seperate businesses his deployed ?   <br>
-	<input type="number" id="nbcommerce" name="" value="">
+	<input onchange="hybrid()" type="number" id="nbcommerce" name="" value="">
 	<br>
 	How many floor in the building ?  <br>
-	<input type="number" id="nbfloor" name="" value="">
+	<input onchange="hybrid()" type="number" id="nbfloor" name="" value="">
 	<br>
 	How many basement in the building ? <br>
-	<input type="number" id="nbssol" name="" value="">
+	<input onchange="hybrid()" type="number" id="nbssol" name="" value="">
 	<br>
 	How many parking available ? <br>
-	<input type="number" id="nbparking" name="" value="">
+	<input onchange="hybrid()" type="number" id="nbparking" name="" value="">
 	<br>
 	How many occupants per floor (maximum) ?   <br>
-	<input type="number" id="maxfloor" name="" value="">
+	<input onchange="hybrid()" type="number" id="maxfloor" name="" value="">
 	<br>
 	How many hours of activity in the building ? <br>
-	<input type="number" id="nbhours" name="" value="">
+	<input onchange="hybrid()" type="number" id="nbhours" name="" value="">
 	<br>
 </div>
 <!--Hybrid fin-->
@@ -358,6 +355,7 @@
 <input type="radio" id="premium" name="service" value="premium"> Premium Service <br>
 <input type="radio" id="excelium" name="service" value="excelium"> Excelium Service <br>
 
+<!-- a mettre dans le javascript-->
 <script>
 var valeur;
 if (document.getElementById("standard").checked) {
@@ -371,7 +369,7 @@ var valeur;
 if (document.getElementById("excelium").checked) {
  valeur = document.getElementById("excelium").value;
 }
-console.log("service")
+
 </script>
 
 <div>

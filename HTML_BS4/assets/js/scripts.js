@@ -269,9 +269,7 @@
 	var instexcelium
 	var nbcolumns
 	
-		function 
-		if "a" est selectionné, nous afficherons les var suivante( nbappart,nbetage,nbetage)
-		(nbappart / nbetage) /6 
+	
 	<div>
 <p> Select the type of service you want :</p>
 <input id="priceUnitStandard" type="radio" name="service_type" value="standard"> Standard Service<br>
