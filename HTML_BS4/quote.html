@@ -259,15 +259,15 @@
 	<!-- Residential debut -->
 	 <div id="residential" class="building_type" >
 		How many appartments in the building ? <br>
-	<input type="number" id="nbappart" name="" value="">
+	<input onchange="residential()" type="number" id="nbappart" name="" value=""/>
 	<br>
 	
 	How many floor in the building ?  <br>
-	<input type="number" id="nbetage" name="" value="">
+	<input onchange="residential()" type="number" id="nbetage" name="" value="">
 	<br>
 
 	How many basement in the building ?   <br>
-	<input type="number" id="nbssol" name="" value="">
+	<input onchange="residential()" type="number" id="nbssol" name="" value="">
 	<br>
 	</div>
 	
@@ -354,21 +354,25 @@
 <!--radio button for service type-->
 <div>
 <p> Select the type of service you want :</p>
-<input type=radio id=standard name=service value=standard> Standard Service <br>
-<input type=radio id=premium name=service value=premium> Premium Service <br>
-<input type=radio id=excelium name=service value=excelium> Excelium Service <br>
+<input type="radio" id="standard" name="service" value="standard"> Standard Service <br>
+<input type="radio" id="premium" name="service" value="premium"> Premium Service <br>
+<input type="radio" id="excelium" name="service" value="excelium"> Excelium Service <br>
 
 <script>
-	var radio = document. getElementsByName("service");
-	var valeur;
-	for(var i = 0; i < boutons.length; i++){
-	 if(boutons[i].checked){
-	 valeur = boutons[i].value;
-	 }
-	}
-	
-	
-	</script>
+var valeur;
+if (document.getElementById("standard").checked) {
+ valeur = document.getElementById("standard").value;
+}
+var valeur;
+if (document.getElementById("premium").checked) {
+ valeur = document.getElementById("premium").value;
+}
+var valeur;
+if (document.getElementById("excelium").checked) {
+ valeur = document.getElementById("excelium").value;
+}
+console.log("service")
+</script>
 
 <div>
 <br>Your Price
@@ -380,38 +384,27 @@
 
 <!--residential results debut-->
 <script>
-	var priceStandard = 7565.00$;
-	var priceInstStandard = 1,1;
-	var pricePremium = 12345.00$;
-	var priceInstPremium = 1,13;
-	var priceExcelium = 15400.00$;
-	var priceInstExcelium = 1,16;
+	var priceStandard = 7565.00 + "$";
+	var priceInstStandard = 1.1;
+	var pricePremium = 12345.00 + "$";
+	var priceInstPremium = 1.13;
+	var priceExcelium = 15400.00 + "$";
+	var priceInstExcelium = 1.16;
 	
 </script>
 
 
 <!--commercial results debut-->
-<script>
 
-function calculer
-document.getElementById("PriceUnit").value = document.getElementById("nbcage").value * document.getElementById("priceStandard").value;
-
-</script>
 
 
 <!--corporate results debut-->
-<script>
 
-</script>
 
 
 <!--hybrid results debut-->
-<script>
-
-</script>
 
 
-<td><input type="button" value="calculer" onclick="calculer();"></td>
 <!--fin formulaire-->
 
 
@@ -590,6 +583,7 @@ document.getElementById("PriceUnit").value = document.getElementById("nbcage").v
 		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
 		<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
 		<script src="assets/js/view/demo.revolution_slider.js"></script>
+		<script src="assets/js/quote.js"></script>
 
 	</body>
 </html>
