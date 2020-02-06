@@ -249,7 +249,42 @@
 
 	};
 
+	/*
+	var priceUnitStandard
+	var priceUnitPremium
+	var priceUnitExcelium
+	var nbappart
+	var nbetage
+	var nbssol
+	var nbcommerce
+	var nbparking
+	var nbcage
+	var personmax
+	var heureouv
+	var prixstandard
+	var prixpremium
+	var prixexcelum
+	var inststandard
+	var instpremium
+	var instexcelium
+	var nbcolumns
 	
+		function 
+		if "a" est selectionné, nous afficherons les var suivante( nbappart,nbetage,nbetage)
+		(nbappart / nbetage) /6 
+	<div>
+<p> Select the type of service you want :</p>
+<input id="priceUnitStandard" type="radio" name="service_type" value="standard"> Standard Service<br>
+<input id="priceUnitPremium" type="radio" name="service_type" value="Premium"> Premium Service<br>
+<input id="priceUnitExcelium" type="radio" name="service_type" value="Excelium"> Excelium Service<br>
+
+<div>
+<br> Your Price
+<br>Price of an elevator $: <input id="PriceUnit" type ="text"  disabled>
+<br>Installation costs $: <input id="InstallationCost" type ="text"  disabled>
+<br>Total cost $: <input id="TotalCost" type ="text"  disabled>
+
+	*/
 	/*<!--*apparition et disparition de texte champs*************************************************************** */
 	
 	$(document).ready(function () {
@@ -261,12 +296,13 @@
 		})
 	});
 
-	/* Calculation Residential*/
+	/* Calculation Residential
 
 
 
 
-	/* Calculation Commercial*/
+	/* Calculation Commercial
+
 
 
 

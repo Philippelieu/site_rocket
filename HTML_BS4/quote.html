@@ -240,7 +240,7 @@
 	<!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE-->
 		
 	<!-- faire apparaitre les champs en fonction du choix de type de building-->
-	
+		
 	<div class=container_quote>
 		
 			
@@ -354,41 +354,65 @@
 <!--radio button for service type-->
 <div>
 <p> Select the type of service you want :</p>
-<input id="priceUnitStandard" type="radio" name="service_type" value="standard"> Standard Service<br>
-<input id="priceUnitPremium" type="radio" name="service_type" value="Premium"> Premium Service<br>
-<input id="priceUnitExcelium" type="radio" name="service_type" value="Excelium"> Excelium Service<br>
+<input type=radio id=standard name=service value=standard> Standard Service <br>
+<input type=radio id=premium name=service value=premium> Premium Service <br>
+<input type=radio id=excelium name=service value=excelium> Excelium Service <br>
+
+<script>
+	var radio = document. getElementsByName("service");
+	var valeur;
+	for(var i = 0; i < boutons.length; i++){
+	 if(boutons[i].checked){
+	 valeur = boutons[i].value;
+	 }
+	}
+	
+	
+	</script>
 
 <div>
-<br> Your Price
+<br>Your Price
 <br>Price of an elevator $: <input id="PriceUnit" type ="text"  disabled>
 <br>Installation costs $: <input id="InstallationCost" type ="text"  disabled>
 <br>Total cost $: <input id="TotalCost" type ="text"  disabled>
-	<!--
-var priceUnitStandard
-var priceUnitPremium
-var priceUnitExcelium
-var nbappart
-var nbetage
-var nbssol
-var nbcommerce
-var nbparking
-var nbcage
-var personmax
-var heureouv
-var prixstandard
-var prixpremium
-var prixexcelum
-var inststandard
-var instpremium
-var instexcelium
-var nbcolumns
+			
 
-    function 
-	if "a" est selectionné, nous afficherons les var suivante( nbappart,nbetage,nbetage)
-	(nbappart / nbetage) /6 
 
--->					
-	<!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE-->
+<!--residential results debut-->
+<script>
+	var priceStandard = 7565.00$;
+	var priceInstStandard = 1,1;
+	var pricePremium = 12345.00$;
+	var priceInstPremium = 1,13;
+	var priceExcelium = 15400.00$;
+	var priceInstExcelium = 1,16;
+	
+</script>
+
+
+<!--commercial results debut-->
+<script>
+
+function calculer
+document.getElementById("PriceUnit").value = document.getElementById("nbcage").value * document.getElementById("priceStandard").value;
+
+</script>
+
+
+<!--corporate results debut-->
+<script>
+
+</script>
+
+
+<!--hybrid results debut-->
+<script>
+
+</script>
+
+
+<td><input type="button" value="calculer" onclick="calculer();"></td>
+<!--fin formulaire-->
 
 
 <!-- FOOTER -->
