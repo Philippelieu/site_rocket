@@ -250,6 +250,7 @@
 	};
 
 	/*<!--*apparition et disparition de texte champs*************************************************************** */
+	
 	$(document).ready(function () {
 		$('.building_type').hide();
 		
