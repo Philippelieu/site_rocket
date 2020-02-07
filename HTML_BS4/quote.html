@@ -17,7 +17,8 @@
 
 		<!-- CORE CSS -->
 		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		
 		<!-- REVOLUTION SLIDER -->
 		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
 		<link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
@@ -29,6 +30,7 @@
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/yellow.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		
 	</head>
 
 	<!--
@@ -357,10 +359,13 @@
 <input type="radio" id="excelium" name="service" value="excelium"> Excelium Service <br>
 
 
-
+<br>The number of elevators you need: <input id="nbascenseur" type="number" name="" value=""  
 
 <div>
-<br>Your Price
+
+
+<br><br><br>
+<h2>Your Price</h2>
 <br>Price of an elevator $: <input id="PriceUnit" type ="text"  disabled>
 <br>Installation costs $: <input id="InstallationCost" type ="text"  disabled>
 <br>Total cost $: <input id="TotalCost" type ="text"  disabled>

@@ -9,7 +9,7 @@ $(document).ready(function () {
     })
 });
 
-// Calculation Residential
+// Calculs Residential
 function residential() {
     console.log("test")
     nbAppart = document.getElementById("nbappart").value
@@ -19,8 +19,28 @@ function residential() {
     
 }
 
+function nombreElevatorRes(){
+    var a = document.getElementById("nbappart").value || 0 ; 
+    var b= document.getElementById("nbetage").value || 0 ;
+    var c = document.getElementById("nbsol").value || 0 ;
+    var nombreAscCommercial = Math.ceil( a/ (b*6) );
 
-// Calculation Commercial
+ var nombreColonne = Math.ceil(b/20);
+
+ var nbascenseur = nombreAscCommercial * nombreColonne;
+     if (a !=0 && b != 0 && c != 0 )
+     {document.getElementById("nbelevator").value= nbascenseur;}
+    
+     else {
+         document.getElementById("nbelevator").value = 0;
+     } 
+
+     return nbelevator
+
+}
+
+
+// Calculs Commercial
 function commercial() {
     console.log("test")
     nbCommerce = document.getElementById("nbcommerce").value
@@ -29,6 +49,13 @@ function commercial() {
     nbParkingc = document.getElementById("nbparking").value
     nbCagec = document.getElementById("nbcage").value
     console.log(nbParkingc)
+}
+
+function nombreAscCommercial(){
+    var a =document.getElementById("nbcage").value || 0;
+    
+
+
 }
 
 // Calculation Corporate
@@ -43,7 +70,7 @@ function corporate() {
 }
 
 
-// Calculation Hydrid*/
+// Calculs Hydrid*/
 function hybrid() {
     console.log("test")
     nbCommerce = document.getElementById("nbcommerce").value
@@ -71,10 +98,14 @@ if (document.getElementById("excelium").checked) {
  valeur = document.getElementById("excelium").value;
 }
 
+// PRICE /
 
+function Price() {
+
+}
     var priceStandard = 7565.00 + "$";
 	var priceInstStandard = 1.1;
 	var pricePremium = 12345.00 + "$";
 	var priceInstPremium = 1.13;
 	var priceExcelium = 15400.00 + "$";
-	var priceInstExcelium = 1.16;
+    var priceInstExcelium = 1.16;
