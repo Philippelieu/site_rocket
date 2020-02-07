@@ -5,7 +5,10 @@ width:600px;
 input{
     width: 100%;
 }
-.container.quote{
-width:600px
+.container_quote{
+    margin-left: 20px;
+    font-weight: bold;
+
+width:800px
 
 }

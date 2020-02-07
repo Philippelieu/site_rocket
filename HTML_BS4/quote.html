@@ -229,7 +229,7 @@
 						</header>
 						<!-- /Top Nav -->
 		<!-- BUTTON CALLOUT -->
-		<a href="#contact" class="btn btn-xlg btn-blue fs-20 fullwidth m-0 rad-0 p-40">
+		<!--<a href="#contact" class="btn btn-xlg btn-blue fs-20 fullwidth m-0 rad-0 p-40">
 			<span class="font-lato fs-30">
 				<strong>Get </strong>Quote
 			
@@ -240,22 +240,23 @@
 	<!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE--><!--FORMULAIRE-->
 		
 	<!-- faire apparaitre les champs en fonction du choix de type de building-->
+	
+	<div class="container_quote">
 		
-	<div class=container_quote>
-		
-			
-			<h1>Would you like a price?</h1>
+
+	<h1>Would you like a price?</h1>
 			<p><h4>Follow the few steps below</h4></p>
 
+			
 	<select id="selectMe">
 		<option value="select">---select---</option>
-		<option value="residential">residential</option>
-		<option value="commercial">commercial</option>
-		<option value="corporate">corporate</option>
-		<option value="hybrid">hybrid</option>
+		<option value="residential">Residential</option>
+		<option value="commercial">Commercial</option>
+		<option value="corporate">Corporate</option>
+		<option value="hybrid">Hybrid</option>
 	</select>
 	<br><br><br>
-
+</div>
 	<!-- Residential debut -->
 	 <div id="residential" class="building_type" >
 		 
@@ -321,15 +322,15 @@
 
 	</div>
 	
-	<!--Corporate debut-->
 
 	<!--Hybrid debut-->
 
 	<div id="hybrid" class="building_type" >
 		
+
 	How many seperate businesses his deployed ?   <br>
 	<input onchange="hybrid()" type="number" id="nbcommerce" name="" value="">
-	<br>
+	<br>	
 	How many floor in the building ?  <br>
 	<input onchange="hybrid()" type="number" id="nbfloor" name="" value="">
 	<br>
@@ -340,13 +341,13 @@
 	<input onchange="hybrid()" type="number" id="nbparking" name="" value="">
 	<br>
 	How many occupants per floor (maximum) ?   <br>
-	<input onchange="hybrid()" type="number" id="maxfloor" name="" value="">
+	<input onchange="hybrid()" type="number" id="nbmaxfloor" name="" value="">
 	<br>
 	How many hours of activity in the building ? <br>
 	<input onchange="hybrid()" type="number" id="nbhours" name="" value="">
 	<br>
 </div>
-<!--Hybrid fin-->
+
 
 <!--radio button for service type-->
 <div>
@@ -355,22 +356,8 @@
 <input type="radio" id="premium" name="service" value="premium"> Premium Service <br>
 <input type="radio" id="excelium" name="service" value="excelium"> Excelium Service <br>
 
-<!-- a mettre dans le javascript-->
-<script>
-var valeur;
-if (document.getElementById("standard").checked) {
- valeur = document.getElementById("standard").value;
-}
-var valeur;
-if (document.getElementById("premium").checked) {
- valeur = document.getElementById("premium").value;
-}
-var valeur;
-if (document.getElementById("excelium").checked) {
- valeur = document.getElementById("excelium").value;
-}
 
-</script>
+
 
 <div>
 <br>Your Price
@@ -380,29 +367,7 @@ if (document.getElementById("excelium").checked) {
 			
 
 
-<!--residential results debut-->
-<script>
-	var priceStandard = 7565.00 + "$";
-	var priceInstStandard = 1.1;
-	var pricePremium = 12345.00 + "$";
-	var priceInstPremium = 1.13;
-	var priceExcelium = 15400.00 + "$";
-	var priceInstExcelium = 1.16;
-	
-</script>
-
-
-<!--commercial results debut-->
-
-
-
-<!--corporate results debut-->
-
-
-
-<!--hybrid results debut-->
-
-
+</div>
 <!--fin formulaire-->
 
 
